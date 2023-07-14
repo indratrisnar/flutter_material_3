@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_material_3/common_button_page.dart';
+import 'package:flutter_material_3/fab_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,7 +16,8 @@ class MainApp extends StatelessWidget {
       theme: ThemeData.dark(
         useMaterial3: true,
       ),
-      home: const CommonButtonPage(),
+      // home: const CommonButtonPage(),
+      home: const FabPage(),
     );
   }
 }
