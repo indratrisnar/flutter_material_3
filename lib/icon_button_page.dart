@@ -1,39 +1,36 @@
 import 'package:flutter/material.dart';
 
-class FabPage extends StatelessWidget {
-  const FabPage({super.key});
+class IconButtonPage extends StatelessWidget {
+  const IconButtonPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Floating Action Button'),
+        title: const Text('Icon Button'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            FloatingActionButton(
-              heroTag: 'asjahsa sh',
+            IconButton(
               onPressed: () {},
-              child: const Icon(Icons.add),
+              icon: const Icon(Icons.settings),
             ),
             const SizedBox(height: 20),
-            FloatingActionButton.extended(
-              heroTag: 'asjais',
+            IconButton.filled(
               onPressed: () {},
-              icon: const Icon(Icons.add),
-              label: const Text('Extended'),
+              icon: const Icon(Icons.settings),
             ),
             const SizedBox(height: 20),
-            FloatingActionButton.large(
+            IconButton.filledTonal(
               onPressed: () {},
-              child: const Icon(Icons.add),
+              icon: const Icon(Icons.settings),
             ),
             const SizedBox(height: 20),
-            FloatingActionButton.small(
+            IconButton.outlined(
               onPressed: () {},
-              child: const Icon(Icons.add),
+              icon: const Icon(Icons.settings),
             ),
           ],
         ),
