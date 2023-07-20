@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_material_3/badge_page.dart';
 import 'package:flutter_material_3/common_button_page.dart';
 import 'package:flutter_material_3/fab_page.dart';
 import 'package:flutter_material_3/icon_button_page.dart';
@@ -21,7 +22,8 @@ class MainApp extends StatelessWidget {
       // home: const CommonButtonPage(),
       // home: const FabPage(),
       // home: const IconButtonPage(),
-      home: const SegmentedButtonPage(),
+      // home: const SegmentedButtonPage(),
+      home: const BadgePage(),
     );
   }
 }
