@@ -15,7 +15,7 @@ class _NavRailPageState extends State<NavRailPage> {
       body: Row(
         children: [
           NavigationRail(
-            backgroundColor: Colors.amber[50],
+            backgroundColor: Colors.grey[700],
             destinations: [
               NavigationRailDestination(
                 icon: FloatingActionButton(
@@ -25,7 +25,7 @@ class _NavRailPageState extends State<NavRailPage> {
                   },
                   child: const Icon(Icons.add),
                 ),
-                label: Text('Add'),
+                label: const Text('Add'),
               ),
               const NavigationRailDestination(
                 icon: Icon(Icons.access_alarm),
@@ -45,9 +45,9 @@ class _NavRailPageState extends State<NavRailPage> {
           ),
           Expanded(
             child: [
-              Icon(Icons.add),
-              Icon(Icons.access_alarm),
-              Icon(Icons.account_balance_wallet),
+              const Icon(Icons.add),
+              const Icon(Icons.access_alarms),
+              const Icon(Icons.account_balance_wallet),
             ][selectedIndex],
           ),
         ],
